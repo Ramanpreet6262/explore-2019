@@ -219,7 +219,7 @@
 
 
             <script>
-                var script_url = "https://script.google.com/macros/s/AKfycbzBmneIcyGOEjqfY2mvK5y4y3LZQdqwIdFCjRXZXS_SrN97jKtW/exec";
+                var script_url = "https://script.google.com/macros/s/AKfycbz1YpIRUxfZbx3xwye4blgcS62jyPY0OTUUQRVSrRC8NwRiVvSa/exec";
                 function insert_value() {
                     var id1 = $("#id").val();
                     var name = $("#name").val();
@@ -228,7 +228,7 @@
                     var contact=$("#contact").val();
                     var campus=$("#campus").val();
                     var event = $("#event option:selected").val();
-                    var url = script_url + "?callback=ctrlq&name=" + name +"&email="+email  + "&id=" + id1 + "&Dept="+dept+"&campus="+campus+ "&contact="+contact+" &Event=" + event +  "&action=insert";
+                    var url = script_url + "?callback=ctrlq&name=" + name + "&email="+email  + "&id=" + id1 + "&Dept="+dept+"&campus="+campus+ "&contact="+contact+" &Event=" + event +  "&action=insert";
                     var request = jQuery.ajax({
                         crossDomain: true,
                         url: url,
