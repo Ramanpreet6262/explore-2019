@@ -1,0 +1,14 @@
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+    all:unset;
+	display: flex;
+	font-family: 'Oswald', sans-serif;
+	background: url("../images/maldives-1993704_1920.jpg");
+	background-size: contain;
+}
+

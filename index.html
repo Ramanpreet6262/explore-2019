@@ -1,0 +1,673 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <title>Explore-2K19</title>
+
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800" rel="stylesheet">
+    <link rel="stylesheet" href="dist/style.css?v=2.0">
+    <link rel="stylesheet" type="text/css" href="dist/owl.carousel.min.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ouibounce/0.0.11/ouibounce.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="/images/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124743260-1"></script>
+    <script>
+            particlesJS.load('particles-js', 'particles.json', function () {
+                console.log('callback - particles.js config loaded');
+            });
+
+    </script>
+
+
+</head>
+
+<body class="body">
+
+
+
+<nav class="nav">
+    <div class="nav__bg"></div>
+    <a  href="index.html" class="nav__logo">
+    </a>
+    <div class="nav__toggle">
+        <div class="hamburger">
+            <div class="hamburger__top"></div>
+            <div class="hamburger__mid"></div>
+            <div class="hamburger__bot"></div>
+        </div>
+    </div>
+
+
+    <ul class="nav__pageList">
+
+        <li class="nav__pageItem" >
+            <a href="./index.html">Home</a>
+
+        </li>
+
+
+
+        <li class="nav__pageItem" >
+            <a href="./Minor%20Events.html">Major Events</a>
+
+        </li>
+        <li class="nav__pageItem">
+            <a href="./Events.html">Minor Events</a>
+        </li>
+        <li class="nav__pageItem">
+            <a href="./team.html">Team</a>
+
+        </li>
+
+    </ul>
+
+
+</nav>
+<script>
+    filterSelection("all")
+    function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("team");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+    }
+
+    function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+        }
+    }
+
+    function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+        }
+        element.className = arr1.join(" ");
+    }
+
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+</script>
+<div id="barba-wrapper"  >
+    <div class="barba-container">
+
+        <div id='homeBanner' class='banner section section--fullHeight u-colorBlack ms__trigger'>
+            <div class='section__bg ms ms__fadeExit  u-bgWhite' id="particles-js" " ></div>
+
+  <div class="u-colorGrey  ms__trigger row section__inner row--mobile" style="position: absolute; left: 50%; transform: translateX(-50%); z-index: 0;">
+                <div class="col col--three">
+    <span class="ms ms__wrapper ms__fadeUp">
+      <span class="bigText" data-mouse-parallax-layer="4">explore</span>
+    </span>
+                </div>
+                <div class="col col--six ms ms__wrapper ms__fade">
+                    <div class="dots dots--midHeight dots--center" data-mouse-parallax-layer="-2"></div>
+                </div>
+                <div class="col col--three">
+    <span class="ms ms__wrapper ms__fadeDown">
+      <span class="bigText" data-mouse-parallax-layer="-4"></span>
+    </span>
+                </div>
+            </div>
+
+            <div class='section__inner banner__inner banner__inner--alignCenter u-textAlignCenter ms ms__fadeExit' style="text-align:center;">
+             <div class="explore-logo">
+                    <img src="./images/big-explore.png">
+                </div>
+                <h2 class='heading u-fontSizeGiant u-fontBold  spanfunkytext  u-fontUpper u-marginBottomMicro ms ms__fadeUp ms--delay0' >Dre<span class="funkytext">am Disco</span>ver E<span class="funkytext">xplor</span>e
+                   </h2>
+
+
+
+
+                <div class='text  u-fontSizeIncreased u-marginBottomGiant u-colorInherit ms ms__fadeUp ms--delay1'>
+                    <h1 class="funkytext">Intra University Cultural Fest</h1>
+                </div>
+
+
+
+
+                <span class='ms__wrapper ms ms__fade ms--delay7'>
+  <a href='./Minor%20Events.html' target="_blank" class='button button--backpack main-reg ' >
+    Register Here
+  </a>
+
+  <a href="#lightbox" class="lightbox-toggle box--video gtag-playVideo" data-lightbox-type="video" data-lightbox-content='https://www.youtube.com/embed/WxW4IOXdqew'>
+
+ </a>
+</span>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class='section u-colorBlack ms__trigger '
+             id=''>
+            <div class='section__bg ms ms__fadeUp  u-bgLightGrey'></div>
+
+            <div class='section__inner u-textAlignCenter'>
+
+                <div class="container1" align="center">
+                    <h1 id="h1" class="u-colorInherit">Coming S<span id="h12">oon In</span></h1>
+                    <div id="timer"></div>
+
+                </div>
+
+                <h2 class='heading u-fontSizeLarge u-fontBold  funkytext   u-marginBottomMedium ms ms__fadeUp ms--delayAuto' style="margin-top: -15%">Turn Your Dream
+                    <span class="spanfunkytext">  Into Reality</span></h2>
+
+
+                <div class='text text--maxReadability u-fontSizeRegular u-marginBottomMedium u-colorInherit ms ms__fadeUp ms--delay1'>
+                    <p>Embracing the artistic bequest, Chitkara University is all set to host the upcoming intra university festival “EXPLORE-DREAM DISCOVER EXPLORE”.
+                    </p>
+
+                    <p>A space to exchange learn and most of all participate in this creative movement is hitting you up this spring. </p>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class='section linkBoxes u-bgLightGrey  linkBoxes--pullBelow'>
+            <div class='section__inner linkBoxes__inner ms__trigger'>
+
+                <div class='linkBoxes__outerWrap ms ms__fadeDown ms--delayAuto'>
+                    <div class="linkBoxes__box linkBoxes__box--bgPink">
+
+
+                        <h2 class='heading u-fontSizeIncreased u-fontBold    u-marginBottomMedium ms ms__Auto ms--delayAuto'>Major Events</h2>
+
+
+
+                        <span class='ms__wrapper ms ms__None ms--delayAuto'>
+  <a href='./Minor%20Events.html'class='button button--white ' >
+    View Program
+  </a>
+
+  <a href="#lightbox" class="lightbox-toggle box--video gtag-playVideo" data-lightbox-type="video" data-lightbox-content=''>
+
+ </a>
+</span>
+
+                    </div>
+                </div>
+
+
+
+                <div class='linkBoxes__outerWrap ms ms__fadeDown ms--delayAuto'>
+                    <div class="linkBoxes__box linkBoxes__box--bgClean">
+
+
+                        <h2 class='heading u-fontSizeIncreased u-fontBold    u-marginBottomMedium ms ms__Auto ms--delayAuto'>Minor Events</h2>
+
+
+                        <span class='ms__wrapper ms ms__None ms--delayAuto'>
+  <a href='./Events.html' class='button button--black ' >
+    View Program
+  </a>
+
+  <a href="#lightbox" class="lightbox-toggle box--video gtag-playVideo" data-lightbox-type="video" data-lightbox-content=''>
+
+ </a>
+</span>
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div id='' class='banner section section--fullHeight u-colorWhite ms__trigger section--roughEdge'>
+            <div class='section__bg ms ms__fadeExit u-bgTransparent'></div>
+
+
+            <div
+                    class='backgroundImage   ms ms__fadeExit ms__fadeUp ms--delayAuto'
+                    style="background-image: url('./images/dancer.jpg')"
+            >
+
+            </div>
+
+
+
+
+
+
+
+            <div class='section__inner banner__inner banner__inner--alignCenter u-textAlignCenter ms ms__fadeExit' style="text-align:center;">
+
+                <h2 class='heading u-fontSizeMedium u-fontBold    u-marginBottomReduced ms ms__fadeUp ms--delayAuto'>Embrace Yourself</h2>
+
+
+                <div class='text text--maxReadability u-fontSizeRegular u-marginBottomSmall u-colorInherit ms ms__fadeUp ms--delay2'>
+                    <p>A blend of cultural ethnicity enfolding different creative genres will be displayed in this exquisite extravaganza. Showcasing music,dance,creative arts,sports and a lot more occurrences. Through this festival we wish to promote knowledge and practice in domain of performing arts. So unleash your talent this year by associating with the revolutionary EXPLORE </p>
+                </div>
+
+
+                <span class='ms__wrapper ms ms__fadeUp ms--delay3'>
+  <a href='./Events.html'class='button button--white gtag-bookTour' target="_blank">
+    Register
+  </a>
+
+  <a href="#lightbox" class="lightbox-toggle box--video gtag-playVideo" data-lightbox-type="video" data-lightbox-content=''>
+
+ </a>
+</span>
+
+
+
+            </div>
+
+        </div>
+        <div class="section mf mf--interval originalSlider ms__trigger section--roughEdge" data-mf-interval="5000">
+            <div class='section__bg ms ms__fadeExit u-bgGrey'></div>
+            <h2 class="originalSlider__bigText ms ms__fadeExit">
+    <span data-mouse-parallax-layer="5" style="color: palevioletred">
+      Explore
+    </span>
+            </h2>
+            <div class="section__inner originalSlider__inner ms__fadeExit">
+
+
+
+
+                <div class="mf__reciever" data-mf-index='1'>
+                    <h3 class='heading originalSlider__heading'><span data-mouse-parallax-layer="-3">Solo Singing</span></h3>
+                    <div class='text originalSlider__text'>
+          <span data-mouse-parallax-layer="3">
+            <p></p>
+          </span>
+                    </div>
+                    <div class="videoSliderBg">
+                        <div class="originalSlider__videoWrap">
+                            <video class="originalSlider__video" src='./images/banner2.mp4' autoplay loop muted playsinline>Your browser is not compatible with HTML5 videos.</video>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="mf__reciever" data-mf-index='2'>
+                    <h3 class='heading originalSlider__heading'><span data-mouse-parallax-layer="-3">Mr. & Mrs. Explore</span></h3>
+                    <div class='text originalSlider__text'>
+          <span data-mouse-parallax-layer="3">
+            <p></p>
+          </span>
+                    </div>
+                    <div class="videoSliderBg">
+                        <div class="originalSlider__videoWrap">
+                            <video class="originalSlider__video" src='./images/banner2.mp4' autoplay loop muted playsinline>Your browser is not compatible with HTML5 videos.</video>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="mf__reciever" data-mf-index='3'>
+                    <h3 class='heading originalSlider__heading'><span data-mouse-parallax-layer="-3">Beat The
+                    Treat</span></h3>
+                    <div class='text originalSlider__text'>
+          <span data-mouse-parallax-layer="3">
+            <p> </p>
+          </span>
+                    </div>
+                    <div class="videoSliderBg">
+                        <div class="originalSlider__videoWrap">
+                            <video class="originalSlider__video" src='./images/banner2.mp4' autoplay loop muted playsinline>Your browser is not compatible with HTML5 videos.</video>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="mf__reciever" data-mf-index='4'>
+                    <h3 class='heading originalSlider__heading'><span data-mouse-parallax-layer="-3">Glitz & Glam</span></h3>
+                    <div class='text originalSlider__text'>
+          <span data-mouse-parallax-layer="3">
+            <p></p>
+          </span>
+                    </div>
+                    <div class="videoSliderBg">
+                        <div class="originalSlider__videoWrap">
+                            <video class="originalSlider__video" src='./images/banner2.mp4' autoplay loop muted playsinline>Your browser is not compatible with HTML5 videos.</video>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="mf__reciever" data-mf-index='5'>
+                    <h3 class='heading originalSlider__heading'><span data-mouse-parallax-layer="-3">Ampli-"Fire"</span></h3>
+                    <div class='text originalSlider__text'>
+          <span data-mouse-parallax-layer="3">
+            <p></p>
+          </span>
+                    </div>
+                    <div class="videoSliderBg">
+                        <div class="originalSlider__videoWrap">
+                            <video class="originalSlider__video" src='./images/banner2.mp4' autoplay loop muted playsinline>Your browser is not compatible with HTML5 videos.</video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mf__reciever" data-mf-index='6'>
+                    <h3 class='heading originalSlider__heading'><span data-mouse-parallax-layer="-3">Thunder Crew</span></h3>
+                    <div class='text originalSlider__text'>
+          <span data-mouse-parallax-layer="3">
+            <p></p>
+          </span>
+                    </div>
+                    <div class="videoSliderBg">
+                        <div class="originalSlider__videoWrap">
+                            <video class="originalSlider__video" src='./images/banner2.mp4' autoplay loop muted playsinline>Your browser is not compatible with HTML5 videos.</video>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+
+
+
+
+        <div class="section u-colorWhite ms__trigger">
+            <div class='section__bg ms ms__fadeExit u-bgCtaGradient'></div>
+            <p class="bigText bigText--vertical u-colorWhite">FREE</p>
+            <div class="section__inner">
+                <div class="u-textAlignCenter u-marginBottomHuge">
+
+
+                    <h2 class='heading u-fontSizeLarge u-fontBold    u-marginBottomAuto ms ms__fadeUp ms--delayAuto'>The Explore Stars</h2>
+
+
+                    <div class='text text--maxReadability u-fontSizeRegular u-marginBottomMedium u-colorInherit ms ms__fadeUp ms--delayAuto'>
+                        <p>We are working hard to bring you great new and exciting events.<br>
+                            Please stay tuned to our social media to receive all our updates!</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div id='' class='banner section u-colorBlack ms__trigger '>
+            <div class='section__bg ms ms__fadeExit u-bgWhite'></div>
+
+
+            <div class='section__inner banner__inner banner__inner--alignTop u-textAlignLeft ms ms__fadeExit' style="text-align:center;">
+
+
+                <p class='subtitle u-fontSizeReduced u-marginBottomMedium u-colorInherit ms ms__boxIn ms--delayAuto'>
+                    Our Sponsers
+                </p>
+
+                <h2 class='heading u-fontSizeMedium u-fontBold   u-fontUpper u-marginBottomAuto ms ms__fadeUp ms--delayAuto'>Become a sponsor at explore
+                    </h2>
+
+
+                <div class="row space-top client partnerSlider">
+
+                  <!--  <div class="item">
+                        <a href="" target="_blank"><img src="./images/big-explore.png" alt="partner"></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="" target="_blank"><img src="./images/sponser.png" alt="partner"></a>
+                    </div>
+                    -->
+                    <a href="mailto:explore2K19@gmail.com">Contact Here</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class='section u-colorWhite ms__trigger section--roughEdge'
+             id=''>
+            <div class='section__bg ms ms__None ms__fadeExit u-bgPurple'></div>
+            <div class="ms__trigger row section__inner">
+                <div class="col col--six col--pushThree ms ms__wrapper ms__fade">
+                    <div class="dots dots--light dots--tallHeight dots--center" data-mouse-parallax-layer="3"></div>
+                </div>
+            </div>
+
+            <div class='section__inner u-textAlignCenter'>
+
+
+
+
+                <h2 class='heading u-fontSizeLarge u-fontBold    u-marginBottomLarge ms ms__fadeUp ms--delayAuto'>See our other Fun and major
+                    events at explore here</h2>
+
+
+
+                <span class='ms__wrapper ms ms__fade ms--delayAuto'>
+  <a href='./Register.html'class='button button--cta ' >
+    Register Here
+  </a>
+
+  <a href="#lightbox" class="lightbox-toggle box--video gtag-playVideo" data-lightbox-type="video" data-lightbox-content=''>
+
+ </a>
+</span>
+
+
+                <div class='u-marginBottomSmall '></div>
+
+            </div>
+        </div>
+
+
+
+                       <script>
+
+
+                           //Avengers endgame is coming this april and we rae going to see how avengers will take revenge from thanos
+                           //Dekhne jana hai mujhe
+                           //Some people will watch it only once but not us not us
+                           const year = (new Date().getFullYear()) + 1;
+                           const fourthOfJuly = new Date(2019, 3, 31).getTime();
+
+                           // countdown
+                           let timer = setInterval(function() {
+
+                               // get today's date
+                               const today = new Date().getTime();
+
+                               // get the difference
+                               const diff = fourthOfJuly - today;
+
+                               // math
+                               let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                               days=days-30;
+                               let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                               let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                               let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+                               // display
+                               document.getElementById("timer").innerHTML =
+                                   "<div class=\"days\"> \
+                                 <div class=\"numbers\">" + days + "</div>days</div> \
+<div class=\"hours\"> \
+  <div class=\"numbers\">" + hours + "</div>hours</div> \
+<div class=\"minutes\"> \
+  <div class=\"numbers\">" + minutes + "</div>minutes</div> \
+<div class=\"seconds\"> \
+  <div class=\"numbers\">" + seconds + "</div>seconds</div> \
+</div>";
+
+                           }, 1000);
+                       </script>
+
+
+    </div>
+</div>
+<div class="spinner__centerWrap spinner__centerWrap--fixed">
+    <div class="spinner">
+        <div class="spinner__upperHalf"></div>
+        <div class="spinner__lowerHalf"></div>
+    </div>
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
+<script type='text/javascript' src='dist/owl.carousel.min.js'></script>
+<script src="./dist/scripts.js?v=2.0"></script>
+<script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>  <!-- Ouibounce Modal -->
+
+
+
+<script>
+    particlesJS.load('particles-js', './js/particles.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
+</script>
+<script>
+    filterSelection("all")
+    function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("team");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+    }
+
+    function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+        }
+    }
+
+    function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+        }
+        element.className = arr1.join(" ");
+    }
+
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+</script>
+
+
+<script>
+    var script_url = "https://script.google.com/macros/s/AKfycbx4v7kS4NjEzTTEOfJBcZxEn3sIZKgjo4QCLLxRRYLJu_MC_3Y/exec";
+    function insert_value() {
+        var id1 = $("#id").val();
+        var name = $("#name").val();
+        var father =$("#father").val();
+        var email = $("#email").val();
+        var dept=$("#Dept").val();
+        var contact=$("#contact").val();
+        var sem=$("#sem").val();
+        var campus=$("#campus").val();
+        var team=$("#team").val();
+        var members=$('#member').val();
+        var event = $("#event option:selected").val();
+        var url = script_url + "?callback=ctrlq&name=" + name +"&father="+father+  "&email=" + email + "&id=" + id1 + "&Dept="+dept+"&campus="+campus+ "&sem="+sem  + "&contact="+contact+" &Event=" + event + "&team="+team+"&member"+members+ "&action=insert";
+        var request = jQuery.ajax({
+            crossDomain: true,
+            url: url,
+            method: "GET",
+            dataType: "jsonp"
+        });
+        $("#resetForm").reset();
+    }
+    function ctrlq(e) {
+        alert('Congrats! Registered Successfully')
+    }
+
+</script>
+
+
+
+
+
+
+
+
+</html>
