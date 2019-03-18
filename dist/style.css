@@ -5410,7 +5410,7 @@ footer{
 
 
 .outerbox{
-    min-height: 550vh;
+    min-height: 750vh;
     position: relative;
     padding-top: 150px;
     margin-top: -10%;
@@ -5420,7 +5420,7 @@ footer{
 
 @media screen and (max-width: 450px){
     .outerbox {
-        min-height: 1500vh;
+        min-height: 2500vh;
     }
     .card{
         width: 50%;
