@@ -4036,9 +4036,12 @@ nav {
 }
 
 @media screen and (max-width: 550px){
-    .explore-logo img{
-        height: 150px;
+.explore-logo img{
+        margin-top: 55px;
+        height: 113px;
     }
+    .explore-logo{
+    height: 228px;
 
 }
 .nav__logo {
